@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>this的指向</title>
+</head>
+<body>
+	<h1>this的指向</h1>
+	<div class="container">
+		<button>按钮1</button>
+		<button>按钮2</button>
+		<button><span>按钮3</span></button>
+		<button>按钮4</button>
+	</div>
+	<script>
+	
+	/*
+	*  this 指向的是 调用它的对象
+	 */
+
+
+		var container = document.querySelector('.container');
+		var btn = container.getElementsByTagName('button');  
+		//btn = [<button>按钮1</button>, <button>按钮2</button> , <button><span>按钮3</span></button> , <button>按钮4</button>]
+
+		btn[0].onclick = function() {
+			alert(this.innerHTML);   //这里的this等同于 btn[0];
+		}
+
+		btn[1].onclick = function() {
+			alert(this.innerHTML);   //这里的this等同于 btn[1]; 下面同理
+		}
+
+		btn[2].onclick = function() {
+			alert(this.innerHTML);
+		}
+
+		btn[3].onclick = function() {
+			alert(this.innerHTML);
+		}	
+
+
+
+	</script>
+</body>
+</html>
+
+
+
+
