@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>任务十八</title>
+	<style type="text/css">
+		.block div {
+			margin: 10px;
+			width: 100px;
+			height: 100px;
+			color: #fff;
+			line-height: 100px;
+			font-size: 26px;
+			display: inline-block;
+			background: skyblue;
+			text-align: center;
+			overflow: hidden;
+		}
+
+		.block div:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<p>根据输入框，点击按键，从左右不同方向增添方块或者删除方块</p>
+	<p>点击方块可删除自身</p>
+	<div class="input">
+		<input type="text" name="num_input" />
+		<input type="button" value="左侧入" />
+		<input type="button" value="右侧入" />
+		<input type="button" value="左侧出" />
+		<input type="button" value="右侧出" />
+	</div>
+	<div class="block"></div>
+	<script type="text/javascript" src="js/test1.js"></script>
+</body>
+</html>
