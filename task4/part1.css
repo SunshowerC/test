@@ -1,0 +1,14 @@
+
+.scoreRegis {
+	border: 1px solid ;
+	border-color: #222 #ddd #ddd #222;
+	border-spacing: 5px;
+}
+
+.scoreRegis th,.scoreRegis td {
+	border: 1px solid ;
+	border-color:#ddd #222 #222 #ddd;
+	height: 20px;
+	line-height: 20px;
+	width: 80px;
+}
