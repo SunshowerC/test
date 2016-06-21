@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--test width
+    <meta name="viewport" content="width=320"> -->
+    <!--test initial-scale
+    <meta name="viewport" content="initial-scale=1"> -->
+    <!-- <meta name="viewport" content="initial-scale=0.5"> -->
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width">-->
+
+    <title>Test 02</title>
+</head>
+<style>
+
+    body {
+        margin: 0;
+    }
+
+    .pic {
+        width: 414px;
+        height: 568px;
+        background-color: #72DFFF;
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        line-height: 568px;
+        font-family: cursive;
+    }
+
+    .what {
+        width: 100px;
+    }
+</style>
+
+<body>
+<div class="pic" > 320*568</div>
+<script>
+    console.log('document.body.clientWidth --', document.body.clientWidth);
+    console.log('window.innerWidth --', window.innerWidth);
+    console.log('screen.width --', screen.width);
+
+    console.log('scale --', window.innerWidth / document.body.clientWidth);
+    alert('document.body.clientWidth --' + document.body.clientWidth+'window.innerWidth --'+ window.innerWidth)
+</script>
+</body>
+</html>
