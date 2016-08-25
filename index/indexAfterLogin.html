@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title></title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link href="assets/css/index.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<script src="scripts/jquery-1.11.3/jquery.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<div class="header-logo">时间银行<span>首页</span></div>
+				<div class="header-search">
+					<div class="search">
+						<input  placeholder="search" class="form-control search-box" type="text"  />
+						<img class='search-icon' src="assets/img/search.png">
+					</div>
+					<div class="search-btn"><a href="javascript:">签到</a></div>
+				</div>
+				<div class="header-user">
+					<p class="user"><span class="glyphicon glyphicon-user user-icon"></span><span class="user-name">方泽锋</span></p>
+					<p class="chat"><span class="glyphicon glyphicon-comment chat-icon"></span><span class='chat-nums'>0</span></p>
+					<p class="money"><img class='money' src="assets/img/money.png"><span class='money-nums'>0</span></p>
+				</div>
+			</div>
+		</header>
+	    <div class="content">
+			<div class="main fl">
+				<div class="main-wrap">
+					<ul id="main-help" class="nav" role="tablist">
+					    <li class="active fl"><a class="helpa" href="#" role="tab" data-toggle="tab">我要求助</a></li>
+					    <li class="fl"><a class="helpa" href="#" role="tab" >我要帮忙</a></li>
+					</ul>
+					<!-- 选项卡面板 -->
+					<form id="uploadFor"  action="192.168.20.21:3000/post/publish" method="post" enctype="multipart/form-data" onsubmit="">					
+						<div class="main-content fl">						
+							<input type="text" class="form-control" id="title" name="title" placeholder="标题" required>
+							<textarea class="form-control"
+							id="content" name="content" rows="2" placeholder="正文" required></textarea>
+							<div class="picemo">
+								<span class="glyphicon glyphicon-picture btn-" id="picture" aria-hidden="true"></span>
+								<span class="emotion"></span>
+								<div id="demo" class="demo" hidden="hidden"></div>
+							</div>
+						</div>
+						<div class="main-button fr">
+							<select class="form-" id="pubTime" name="pubTime" required> 
+								<option value="0">有效期</option> 
+								<option value="1">1天</option> 
+								<option value="2">2天</option> 
+								<option value="3">3天</option> 
+								<option value="4">4天</option> 
+								<option value="5">5天</option> 
+								<option value="6">6天</option> 
+								<option value="7">1周</option> 
+								<option>2周</option> 
+								<option>3周</option> 
+								<option>1个月</option> 
+							</select>
+							<input type="text" class="form-control" id="exampleInputEmail2" placeholder="联系方式" name="phone" required />
+							<input type="text" class="form-control" id="exampleInputEmail2" name="missionCoin" placeholder="悬赏时间币" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" required />
+							<button class="btn btn-sm btn-block btn-primary" id="publish">发布</button>
+						</div>
+					</form>		
+				</div>
+				<div class="main-ad">
+					<div class="pic" id="fade">
+						<ul class="fl">
+							<li style="display: none; z-index: 1;"><a href=""><img src="assets/img/1.jpg"></a></li>
+							<li style="display: list-item; z-index: 2;"><a href=""><img src="assets/img/2.jpg"></a></li>
+							<li style="display: none; z-index: 1;"><a href=""><img src="assets/img/3.jpg"></a></li>
+						</ul>
+						<ol class="list-unstyled fr">
+							<li class=""><a href="javascript:;"><img src="assets/img/1.jpg"></a></li>
+							<li class="active"><a href="javascript:;"><img src="assets/img/2.jpg"></a></li>
+							<li class=""><a href="javascript:;"><img src="assets/img/3.jpg"></a></li>
+						</ol>
+					</div>
+				</div>
+				<div class="main-card over-flow" >
+					<ul class="nav" id="main-card">
+			            <li class="fl cactive" id="lastest-card">最新帖子</li>
+			            <li class="fl"
+			             id="ask-help-ground">求助广场</li>
+			            <li class="fl" id="help-ground">帮助广场</li>
+			        </ul>
+			        <div class="clear"></div>
+			        <div class="renovate" id="renovate">点击刷新</div>
+			        <ul class="list-unstyled">
+			        	<li class="buzhidaosha"></li>
+			        	<li class="buzhidaosha"></li>
+			  			<li class="buzhidaosha"></li>
+			  			<li class="buzhidaosha"></li>
+			  			<li class="buzhidaosha"></li>
+			        </ul>
+				</div>	
+			</div>
+			<div class="side fr">
+				<div class="side-person">
+					<div class="person-header">
+						<div class="p-avatar">
+							<img src="assets/img/1.jpg">
+						</div>
+					</div>
+					<ul class="person-content list-unstyled">
+						<li class="consisting-card">
+							<a class="" href="" >
+								<div class="num">61</div> 
+								<span class="card">进行中的帖子</span>
+							</a>
+						</li>
+						<li class="star-card">
+							<a class="" href="" >
+								<div class="num">61</div> 
+								<span class="card">收藏</span>
+							</a>
+						</li>
+						<li class="finish-card">
+							<a class="" href="" >
+								<div class="num">61</div> 
+								<span class="card">已完成的帖子</span>
+							</a>
+						</li>
+					</ul>
+				</div>	
+				<div class="side-list">
+					<ul class="nav over-flow" id="side-list">
+			            <li class="fl lactive" id="red-person">红人榜</li>
+			            <li class="fl" id="rich-person">富豪榜</li>
+			        </ul>
+			        <div class="clear"></div>
+			        <ul class="persons list-unstyled">
+			        	<li>
+			        		<a class="s-avatar">
+			        			<img src="assets/img/1.jpg">	     		
+			        			<div  class="message">
+				        			<div class="name">吴玲燕</div>
+				        			<div class="money">1208</div>
+			        			</div>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a class="s-avatar">
+			        			<img src="assets/img/1.jpg">	     		
+			        			<div  class="message">
+				        			<div class="name">吴玲燕</div>
+				        			<div class="money">1208</div>
+			        			</div>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a class="s-avatar">
+			        			<img src="assets/img/1.jpg">	     		
+			        			<div  class="message">
+				        			<div class="name">吴玲燕</div>
+				        			<div class="money">1208</div>
+			        			</div>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a class="s-avatar">
+			        			<img src="assets/img/1.jpg">	     		
+			        			<div  class="message">
+				        			<div class="name">吴玲燕</div>
+				        			<div class="money">1208</div>
+			        			</div>
+			        		</a>
+			        	</li>
+			        	<li>
+			        		<a class="s-avatar">
+			        			<img src="assets/img/1.jpg">	     		
+			        			<div  class="message">
+				        			<div class="name">吴玲燕</div>
+				        			<div class="money">1208</div>
+			        			</div>
+			        		</a>
+			        	</li>			    
+			        </ul>
+				</div>
+				
+				<div class="side-pic">
+					<img src="assets/img/5.jpg">
+				</div>	
+			</div>
+		</div>
+        <script src="scripts/jquery-1.11.3/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/jquery-1.11.3/jquery.min.js"></script>
+        <script src="scripts/jquery.qqFace.js"></script>
+    </body>
+</html>

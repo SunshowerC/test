@@ -2,49 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--test width
-    <meta name="viewport" content="width=320"> -->
-    <!--test initial-scale
-    <meta name="viewport" content="initial-scale=1"> -->
-    <!-- <meta name="viewport" content="initial-scale=0.5"> -->
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
 
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--<meta name="viewport" content="width=device-width">-->
-
-    <title>Test 02</title>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <title>task1</title>
 </head>
 <style>
 
     body {
         margin: 0;
+        padding: 10px;
     }
 
-    .pic {
-        width: 400px;
-        height: 568px;
-        background-color: #72DFFF;
-        color: white;
-        font-size: 60px;
+    div,nav,section,footer {
         text-align: center;
-        line-height: 568px;
-        font-family: cursive;
+        border: 1px solid #222;
+        padding: 10px;
+    }
+    .head {
+        overflow: hidden;
+        position: relative;
     }
 
-    .what {
-        width: 100px;
+    .logo {
+        float: left;
+        width: 200px;
+        height: 50px;
+    }
+
+    .search {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 200px;
+    }
+
+    nav {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .main {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .lunbo {
+        height: 500px;
+    }
+
+    .news {
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .news div {
+        width: 30%;
+        height: 200px;
+        margin: 0 10px;
+        float: left;
+    }
+    
+    h1 {
+        text-align: left;
+    }
+
+    footer {
+        height: 150px;
     }
 </style>
 
 <body>
-<div class="pic" > 320*568</div>
-<script>
-    console.log('document.body.clientWidth --', document.body.clientWidth);
-    console.log('window.innerWidth --', window.innerWidth);
-    console.log('screen.width --', screen.width);
+<header>
+    <div class="head">
+        <div class="logo">网站logo</div>
+        <div class="search">搜索栏</div>
+    </div>
+    <nav>导航条</nav>
+</header>
 
-    console.log('scale --', window.innerWidth / document.body.clientWidth);
-    alert('document.body.clientWidth --' + document.body.clientWidth+'window.innerWidth --'+ window.innerWidth)
+<div class="main">
+    <div class="lunbo">今日热点（轮播图）</div>
+
+    <section class="news">
+        <h1>军事版块</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section class="news">
+        <h1>体育版块</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section class="news">
+        <h1>社会版块</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section class="news">
+        <h1>财经版块</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    .<br>
+    .<br>
+    .<br>
+    .<br>
+    .<br>
+
+
+</div>
+
+<footer>
+    版权信息
+</footer>
+
+
+<script>
+    var num = /\d/g;
+    var str = "aa9aa";
+    console.log(num.test(str))
+
 </script>
 </body>
 </html>

@@ -1,0 +1,191 @@
+@import "user-panel.css";
+
+
+body {
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+.transition {
+    transition-duration: 0.3s;
+}
+
+.user-content {
+    width: 960px;
+    margin: 50px auto;
+    font-size: 16px;
+}
+
+.user-info {
+    text-align: center;
+    background-color: #fafafa;
+
+    padding-top: 30px;
+    border: 1px solid #e1e1e8;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+}
+
+.photo figcaption {
+    font-size: 14px;
+
+}
+
+.user-time-num {
+    color: #e7ab6f;
+}
+
+.user-star {
+    color: #f3c637;
+}
+
+.user-panel-nav {
+    background-color: #30aad8;
+    margin-bottom: 30px;
+}
+
+.user-panel-nav > li {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.user-panel-nav > li.active > a, .user-panel-nav > li.active > a:focus, .user-panel-nav > li > a:hover {
+    background-color: #2494BC !important;
+    color: #fff;
+    -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, .1);
+    -moz-box-shadow: inset 0 1px 5px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+.user-panel-nav a {
+    color: #fff;
+    border: none !important;
+}
+
+.user-post-menu {
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+}
+
+.tab-content {
+    float: right;
+    width: 75%;
+    padding-left: 15px;
+}
+
+.glyphicon-qq:before {
+    content: "QQ";
+    font-weight: bolder;
+}
+
+/*#user-detail {*/
+/*text-align: center;*/
+/*}*/
+.tab-content textarea {
+    padding-top: 25px;
+    text-indent: 2.5em;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+.t-area {
+    position: relative;
+    display: block;
+    /*font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;*/
+}
+
+.t-area:after {
+    content: "\e065";
+    position: absolute;
+    top: 0px;
+    padding: 8px 12px;
+    border-radius: 4px 0 4px 0;
+    background-color: #3276b1;
+    color: #fff;
+}
+
+
+
+
+.post-navbar {
+    padding: 0;
+}
+
+.search-bar {
+    float: right;
+}
+
+article.post-item {
+    border-bottom:1px dashed #aaa;
+}
+
+
+.post-item > .media-body {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.post-item > .media-body h4 {
+    color: #2d70b0;
+}
+.article-content {
+    text-indent:2em;
+}
+
+.post-item > .media-body > footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #aaa;
+}
+
+.post-item footer > .sign-info {
+    float: right;
+    margin:0;
+}
+
+.post-item .media-right{
+    width: 200px;
+    text-align: center;
+    padding-top:24px;
+}
+
+
+.time-value:before {
+    content: "￥";
+    display: inline-block;
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    
+    color: #fff;
+    text-align: center;
+    line-height:25px;
+    background-color: #dfc935;
+}
+
+.btn-sure {
+    margin-top:24px;
+    border: 1px solid #2d70b0;
+    color: #2d70b0;
+}
+
+.btn-sure:hover {
+    color: #fff;
+    background-color: #2d70b0;
+}
+
+.avatar-upload-panel {
+    display: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 99;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+
