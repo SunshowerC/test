@@ -13,4 +13,6 @@ let min = ()=>{
     return 'min one';
 }
 
-
+let max = ()=> {
+    return "max max maxxxx!";
+}
