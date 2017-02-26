@@ -5,9 +5,7 @@
 
 
 
-let test = ()=>{
-    return 'test my name';
-};
+let add = (a,b) => a + b;
 
 let min = ()=>{
     return 'min one';
