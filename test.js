@@ -7,10 +7,10 @@
 
 let add = (a,b) => a + b;
 
-let min = ()=>{
-    return 'min one';
-}
 
 let max = ()=> {
     return "max max maxxxx!";
 }
+
+
+let  deleteMin = ()=> `delete MIN function`;
