@@ -9,5 +9,8 @@ let test = ()=>{
     return 'test my name';
 };
 
+let min = ()=>{
+    return 'min one';
+}
 
 
