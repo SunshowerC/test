@@ -13,6 +13,10 @@ let max = ()=> {
 }
 
 
+let min = ()=> {
+    return "max max maxxxx!";
+}
+
 let deleteMin = ()=> `delete MIN function`;
 
 let version3 = ()=> `version3333333`;
