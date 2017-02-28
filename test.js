@@ -15,10 +15,7 @@ let max = ()=> {
 let max = ()=> {
     return "max max maxxxx!";
 }
-
-let max = ()=> {
-    return "max max maxxxx!";
-}
+ 
 
 
 
