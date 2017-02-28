@@ -5,7 +5,7 @@
 
 
 
-let add = (a,b) => a + b;
+let add = (a, b) => a + b;
 
 
 let max = ()=> {
@@ -13,6 +13,61 @@ let max = ()=> {
 }
 
 
-let  deleteMin = ()=> `delete MIN function`;
+let deleteMin = ()=> `delete MIN function`;
 
-let version3 =  ()=> `version3333333`;
+let version3 = ()=> `version3333333`;
+
+
+
+
+var tArr = [{
+    id: 1,
+    children: [{
+        id: 2
+    }, {
+        id: 3
+    }]
+}, {
+    id: 22,
+    children: [{
+        id: 5,
+        children: [{
+            id: 20,
+            children:[{
+                id: 56
+            }, {
+                id: 78
+            }]
+        }, {
+            id: 30
+        }]
+    },
+        {
+            id: 6
+        }
+
+    ]
+}]
+
+
+var fun = (arr) =>{
+    return arr.reduce( (all,o)=>{
+        console.log('all:',all);
+
+        if (o.children) {
+
+            return all.concat(o.id , fun(o.children) );
+        } else {
+            return all.concat( o.id );
+        }
+
+    },[])
+}
+fun(tArr)
+
+//
+// arr.reduce( (all,o) =>
+//     all.concat(o.children ? o.children.map( c => c.id ) : []  ), []
+// )
+
+
