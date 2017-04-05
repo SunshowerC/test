@@ -9,6 +9,8 @@
 
 // master master master master master
 
+// test git difftool
+
 
 let add = (a, b) => a + b;
 
